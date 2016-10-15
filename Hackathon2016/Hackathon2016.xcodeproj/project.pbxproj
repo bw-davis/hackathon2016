@@ -15,7 +15,11 @@
 		F103A0EF1DB2875100B4BDF5 /* Hackathon2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A0EE1DB2875100B4BDF5 /* Hackathon2016Tests.swift */; };
 		F103A0FA1DB2875100B4BDF5 /* Hackathon2016UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A0F91DB2875100B4BDF5 /* Hackathon2016UITests.swift */; };
 		F103A10C1DB29B7100B4BDF5 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */; };
+<<<<<<< HEAD
+		F1D3E4401DB2AFC400D2D172 /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D3E43F1DB2AFC400D2D172 /* StatsController.swift */; };
+=======
 		F1D3E43E1DB2A5BD00D2D172 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D3E43D1DB2A5BD00D2D172 /* StatsViewController.swift */; };
+>>>>>>> master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +54,11 @@
 		F103A0F91DB2875100B4BDF5 /* Hackathon2016UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackathon2016UITests.swift; sourceTree = "<group>"; };
 		F103A0FB1DB2875100B4BDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		F1D3E43F1DB2AFC400D2D172 /* StatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsController.swift; sourceTree = "<group>"; };
+=======
 		F1D3E43D1DB2A5BD00D2D172 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+>>>>>>> master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +154,12 @@
 			isa = PBXGroup;
 			children = (
 				F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */,
+<<<<<<< HEAD
+				F1D3E43F1DB2AFC400D2D172 /* StatsController.swift */,
+=======
 				F1D3E43D1DB2A5BD00D2D172 /* StatsViewController.swift */,
 				EC68D65F1DB2AF230059E583 /* BaselineViewController.swift */,
+>>>>>>> master
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,8 +310,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F103A0DA1DB2875000B4BDF5 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
+				F1D3E4401DB2AFC400D2D172 /* StatsController.swift in Sources */,
+=======
 				EC68D6601DB2AF230059E583 /* BaselineViewController.swift in Sources */,
 				F1D3E43E1DB2A5BD00D2D172 /* StatsViewController.swift in Sources */,
+>>>>>>> master
 				F103A10C1DB29B7100B4BDF5 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +469,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				SWIFT_VERSION = 3.0;
+=======
 				SWIFT_VERSION = 2.3;
+>>>>>>> master
 			};
 			name = Debug;
 		};
@@ -465,7 +485,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				SWIFT_VERSION = 3.0;
+=======
 				SWIFT_VERSION = 2.3;
+>>>>>>> master
 			};
 			name = Release;
 		};
@@ -477,7 +501,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				SWIFT_VERSION = 3.0;
+=======
 				SWIFT_VERSION = 2.3;
+>>>>>>> master
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackathon2016.app/Hackathon2016";
 			};
 			name = Debug;
@@ -490,7 +518,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				SWIFT_VERSION = 3.0;
+=======
 				SWIFT_VERSION = 2.3;
+>>>>>>> master
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackathon2016.app/Hackathon2016";
 			};
 			name = Release;
@@ -502,7 +534,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				SWIFT_VERSION = 3.0;
+=======
 				SWIFT_VERSION = 2.3;
+>>>>>>> master
 				TEST_TARGET_NAME = Hackathon2016;
 			};
 			name = Debug;
@@ -514,7 +550,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
+				SWIFT_VERSION = 3.0;
+=======
 				SWIFT_VERSION = 2.3;
+>>>>>>> master
 				TEST_TARGET_NAME = Hackathon2016;
 			};
 			name = Release;
