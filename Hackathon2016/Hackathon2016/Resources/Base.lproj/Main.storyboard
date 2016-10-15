@@ -32,27 +32,25 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="9hj-qY-HP4"/>
                                 </constraints>
-<<<<<<< HEAD
+                                
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                 <state key="normal" title="STATS"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482499314" green="1" blue="0.92939517811821148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-=======
-                                <state key="normal" title="App"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gly-Yw-Xki">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Jtt-ZU-XbA"/>
-                                </constraints>
-                                <state key="normal" title="Stats"/>
-                                <connections>
-                                    <segue destination="zqx-hm-vQ8" kind="show" id="r66-B9-oOG"/>
-                                </connections>
-                            </button>
-                        </subviews>
+                        <state key="normal" title="App"/>
+                        
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gly-Yw-Xki">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Jtt-ZU-XbA"/>
+                            </constraints>
+                            <state key="normal" title="Stats"/>
+                            <connections>
+                                <segue destination="zqx-hm-vQ8" kind="show" id="r66-B9-oOG"/>
+                            </connections>
+                        </button>
+                        
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
->>>>>>> master
                         <constraints>
                             <constraint firstItem="63p-zS-0N8" firstAttribute="centerX" secondItem="H4z-dM-szP" secondAttribute="centerX" id="Pad-8t-61q"/>
                             <constraint firstItem="63p-zS-0N8" firstAttribute="centerY" secondItem="H4z-dM-szP" secondAttribute="centerY" id="q43-Kb-sWM"/>
@@ -96,7 +94,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours of sleep did you get?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yM0-iA-iSl">
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -152,26 +149,24 @@
                             <constraint firstItem="uJj-4I-4Av" firstAttribute="top" secondItem="9v0-O4-y04" secondAttribute="bottom" constant="30" id="v85-Gd-UwC"/>
                             <constraint firstItem="tVr-F4-b9c" firstAttribute="top" secondItem="uJj-4I-4Av" secondAttribute="bottom" constant="30" id="zf8-Eq-9yy"/>
                         </constraints>
-=======
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLy-wr-CYa">
-                                <frame key="frameInset" minX="170" minY="261" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="startButtonPressWithSender:" destination="vUi-mX-Quc" eventType="primaryActionTriggered" id="e8a-Cj-wSs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43R-6v-qdV">
-                                <frame key="frameInset" minX="162" minY="318" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Restart"/>
-                                <connections>
-                                    <action selector="resetButtonPressWithSender:" destination="vUi-mX-Quc" eventType="primaryActionTriggered" id="hYT-BE-y7C"/>
-                                </connections>
-                            </button>
-                        </subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLy-wr-CYa">
+                            <frame key="frameInset" minX="170" minY="261" width="34" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Start"/>
+                            <connections>
+                                <action selector="startButtonPressWithSender:" destination="vUi-mX-Quc" eventType="primaryActionTriggered" id="e8a-Cj-wSs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43R-6v-qdV">
+                            <frame key="frameInset" minX="162" minY="318" width="50" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Restart"/>
+                            <connections>
+                                <action selector="resetButtonPressWithSender:" destination="vUi-mX-Quc" eventType="primaryActionTriggered" id="hYT-BE-y7C"/>
+                            </connections>
+                        </button>
+                        
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
->>>>>>> master
                     </view>
                     <navigationItem key="navigationItem" title="Question 1" id="xKY-KN-AbS">
                         <barButtonItem key="backBarButtonItem" title="Back" id="zux-x6-vxY"/>
