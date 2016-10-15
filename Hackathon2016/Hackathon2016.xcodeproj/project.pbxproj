@@ -38,7 +38,7 @@
 		F103A0DE1DB2875000B4BDF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F103A0E01DB2875000B4BDF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F103A0E31DB2875000B4BDF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F103A0E51DB2875100B4BDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		F103A0E51DB2875100B4BDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F103A0EA1DB2875100B4BDF5 /* Hackathon2016Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hackathon2016Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F103A0EE1DB2875100B4BDF5 /* Hackathon2016Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackathon2016Tests.swift; sourceTree = "<group>"; };
 		F103A0F01DB2875100B4BDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
