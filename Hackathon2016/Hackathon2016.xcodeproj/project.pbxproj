@@ -13,6 +13,7 @@
 		F103A0E41DB2875000B4BDF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F103A0E21DB2875000B4BDF5 /* LaunchScreen.storyboard */; };
 		F103A0EF1DB2875100B4BDF5 /* Hackathon2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A0EE1DB2875100B4BDF5 /* Hackathon2016Tests.swift */; };
 		F103A0FA1DB2875100B4BDF5 /* Hackathon2016UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A0F91DB2875100B4BDF5 /* Hackathon2016UITests.swift */; };
+		F103A10C1DB29B7100B4BDF5 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F103A0F51DB2875100B4BDF5 /* Hackathon2016UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hackathon2016UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F103A0F91DB2875100B4BDF5 /* Hackathon2016UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackathon2016UITests.swift; sourceTree = "<group>"; };
 		F103A0FB1DB2875100B4BDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		F103A1091DB2887D00B4BDF5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F103A0DA1DB2875000B4BDF5 /* AppDelegate.swift in Sources */,
+				F103A10C1DB29B7100B4BDF5 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
