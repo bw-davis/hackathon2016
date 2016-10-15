@@ -80,7 +80,7 @@
         <!--Baseline-->
         <scene sceneID="uQv-YE-7Da">
             <objects>
-                <viewController title="Baseline" id="vUi-mX-Quc" sceneMemberID="viewController">
+                <viewController title="Baseline" id="vUi-mX-Quc" customClass="BaselineViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Olf-de-zX8"/>
                         <viewControllerLayoutGuide type="bottom" id="oXJ-iE-kf3"/>
@@ -89,17 +89,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Guys!!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yM0-iA-iSl">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLy-wr-CYa">
+                                <frame key="frameInset" minX="170" minY="261" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonPressWithSender:" destination="vUi-mX-Quc" eventType="primaryActionTriggered" id="e8a-Cj-wSs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43R-6v-qdV">
+                                <frame key="frameInset" minX="162" minY="318" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="resetButtonPressWithSender:" destination="vUi-mX-Quc" eventType="primaryActionTriggered" id="hYT-BE-y7C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="yM0-iA-iSl" firstAttribute="centerY" secondItem="Lc0-cS-uRG" secondAttribute="centerY" id="EKO-Bx-EG5"/>
-                            <constraint firstItem="yM0-iA-iSl" firstAttribute="centerX" secondItem="Lc0-cS-uRG" secondAttribute="centerX" id="beQ-2A-NBt"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xKY-KN-AbS"/>
                 </viewController>

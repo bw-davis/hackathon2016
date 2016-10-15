@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC68D6601DB2AF230059E583 /* BaselineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC68D65F1DB2AF230059E583 /* BaselineViewController.swift */; };
 		F103A0DA1DB2875000B4BDF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A0D91DB2875000B4BDF5 /* AppDelegate.swift */; };
 		F103A0DF1DB2875000B4BDF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F103A0DD1DB2875000B4BDF5 /* Main.storyboard */; };
 		F103A0E11DB2875000B4BDF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F103A0E01DB2875000B4BDF5 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC68D65F1DB2AF230059E583 /* BaselineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaselineViewController.swift; sourceTree = "<group>"; };
 		F103A0D61DB2875000B4BDF5 /* Hackathon2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F103A0D91DB2875000B4BDF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F103A0DE1DB2875000B4BDF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */,
 				F1D3E43D1DB2A5BD00D2D172 /* StatsViewController.swift */,
+				EC68D65F1DB2AF230059E583 /* BaselineViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F103A0DA1DB2875000B4BDF5 /* AppDelegate.swift in Sources */,
+				EC68D6601DB2AF230059E583 /* BaselineViewController.swift in Sources */,
 				F1D3E43E1DB2A5BD00D2D172 /* StatsViewController.swift in Sources */,
 				F103A10C1DB29B7100B4BDF5 /* MainMenu.swift in Sources */,
 			);
