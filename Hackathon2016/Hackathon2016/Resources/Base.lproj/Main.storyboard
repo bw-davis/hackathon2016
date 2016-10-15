@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="osk-O4-Ews">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="osk-O4-Ews">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -32,25 +32,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="9hj-qY-HP4"/>
                                 </constraints>
-                                
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
-                                <state key="normal" title="STATS"/>
+                                <state key="normal" title="Stats"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482499314" green="1" blue="0.92939517811821148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <state key="normal" title="App"/>
-                        
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gly-Yw-Xki">
-                            <constraints>
-                                <constraint firstAttribute="width" constant="100" id="Jtt-ZU-XbA"/>
-                            </constraints>
-                            <state key="normal" title="Stats"/>
-                            <connections>
-                                <segue destination="zqx-hm-vQ8" kind="show" id="r66-B9-oOG"/>
-                            </connections>
-                        </button>
-                        
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="63p-zS-0N8" firstAttribute="centerX" secondItem="H4z-dM-szP" secondAttribute="centerX" id="Pad-8t-61q"/>
                             <constraint firstItem="63p-zS-0N8" firstAttribute="centerY" secondItem="H4z-dM-szP" secondAttribute="centerY" id="q43-Kb-sWM"/>
@@ -149,24 +135,6 @@
                             <constraint firstItem="uJj-4I-4Av" firstAttribute="top" secondItem="9v0-O4-y04" secondAttribute="bottom" constant="30" id="v85-Gd-UwC"/>
                             <constraint firstItem="tVr-F4-b9c" firstAttribute="top" secondItem="uJj-4I-4Av" secondAttribute="bottom" constant="30" id="zf8-Eq-9yy"/>
                         </constraints>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLy-wr-CYa">
-                            <frame key="frameInset" minX="170" minY="261" width="34" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Start"/>
-                            <connections>
-                                <action selector="startButtonPressWithSender:" destination="vUi-mX-Quc" eventType="primaryActionTriggered" id="e8a-Cj-wSs"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43R-6v-qdV">
-                            <frame key="frameInset" minX="162" minY="318" width="50" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Restart"/>
-                            <connections>
-                                <action selector="resetButtonPressWithSender:" destination="vUi-mX-Quc" eventType="primaryActionTriggered" id="hYT-BE-y7C"/>
-                            </connections>
-                        </button>
-                        
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Question 1" id="xKY-KN-AbS">
                         <barButtonItem key="backBarButtonItem" title="Back" id="zux-x6-vxY"/>
