@@ -14,6 +14,7 @@
 		F103A0EF1DB2875100B4BDF5 /* Hackathon2016Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A0EE1DB2875100B4BDF5 /* Hackathon2016Tests.swift */; };
 		F103A0FA1DB2875100B4BDF5 /* Hackathon2016UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A0F91DB2875100B4BDF5 /* Hackathon2016UITests.swift */; };
 		F103A10C1DB29B7100B4BDF5 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */; };
+		F1D3E43E1DB2A5BD00D2D172 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D3E43D1DB2A5BD00D2D172 /* StatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F103A0F91DB2875100B4BDF5 /* Hackathon2016UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackathon2016UITests.swift; sourceTree = "<group>"; };
 		F103A0FB1DB2875100B4BDF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		F1D3E43D1DB2A5BD00D2D172 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */,
+				F1D3E43D1DB2A5BD00D2D172 /* StatsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,13 +228,16 @@
 				TargetAttributes = {
 					F103A0D51DB2875000B4BDF5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					F103A0E91DB2875100B4BDF5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = F103A0D51DB2875000B4BDF5;
 					};
 					F103A0F41DB2875100B4BDF5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = F103A0D51DB2875000B4BDF5;
 					};
 				};
@@ -289,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F103A0DA1DB2875000B4BDF5 /* AppDelegate.swift in Sources */,
+				F1D3E43E1DB2A5BD00D2D172 /* StatsViewController.swift in Sources */,
 				F103A10C1DB29B7100B4BDF5 /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -448,6 +456,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -459,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackathon2016.app/Hackathon2016";
 			};
 			name = Debug;
@@ -471,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackathon2016.app/Hackathon2016";
 			};
 			name = Release;
@@ -482,6 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = Hackathon2016;
 			};
 			name = Debug;
@@ -493,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.uoregon.bwd.Hackathon2016UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = Hackathon2016;
 			};
 			name = Release;
@@ -516,6 +529,7 @@
 				F103A1001DB2875100B4BDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F103A1011DB2875100B4BDF5 /* Build configuration list for PBXNativeTarget "Hackathon2016Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +538,7 @@
 				F103A1031DB2875100B4BDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F103A1041DB2875100B4BDF5 /* Build configuration list for PBXNativeTarget "Hackathon2016UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +547,7 @@
 				F103A1061DB2875100B4BDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
