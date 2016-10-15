@@ -1,15 +1,15 @@
 //
-//  Hackathon2016Tests.swift
-//  Hackathon2016Tests
+//  HKTutorialTests.swift
+//  HKTutorialTests
 //
-//  Created by Mac Owner on 10/15/16.
-//  Copyright © 2016 Mac Owner. All rights reserved.
+//  Created by ernesto on 18/10/14.
+//  Copyright (c) 2014 raywenderlich. All rights reserved.
 //
 
+import UIKit
 import XCTest
-@testable import Hackathon2016
 
-class Hackathon2016Tests: XCTestCase {
+class HKTutorialTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -23,12 +23,12 @@ class Hackathon2016Tests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true, "Pass")
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        self.measure() {
             // Put the code you want to measure the time of here.
         }
     }
