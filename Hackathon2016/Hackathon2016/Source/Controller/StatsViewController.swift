@@ -10,9 +10,7 @@ import UIKit
 
 class StatsViewController: UIViewController {
     
-    if HKHealthStore.isHealthDataAvailable() {
-    // add code to use HealthKit here...
-    }
+   
     
 
     
