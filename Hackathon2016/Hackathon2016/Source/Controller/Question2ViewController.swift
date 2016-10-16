@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaselineViewController: UIViewController {
+class Question2ViewController: UIViewController {
     var dataArray: Array<Int> = []
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
@@ -22,34 +22,35 @@ class BaselineViewController: UIViewController {
     @IBAction func startButtonPress1(button sender: UIButton){
         sender.backgroundColor = UIColor.cyanColor()
         switch sender {
-        case button1:
+        case sender == button1:
             print("button1 was pressed")
             dataArray.append(1)
-        case button2:
+        case sender == button2:
             print("button2 was pressed")
             dataArray.append(2)
-        case button3:
+        case sender == button3:
             dataArray.append(3)
-        case button4:
+        case sender == button4:
             dataArray.append(4)
-        case button5:
+        case sender == button5:
             dataArray.append(5)
-        case button6:
+        case sender == button6:
             dataArray.append(6)
         default:
             break
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+   /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let question2 = segue.destinationViewController as! Question2ViewController
         question2.dataArray = self.dataArray
     }
-    
+    */
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
+        print(dataArray)
     }
 }
 

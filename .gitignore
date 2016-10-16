@@ -1,1 +1,10 @@
 .DS_Store
+TestFrameworks
+xcuserdata
+*.xccheckout
+.DS_Store*
+enthumbs.db
+Icon\?
+Thumbs.db
+*.perspectivev3
+Pods/
