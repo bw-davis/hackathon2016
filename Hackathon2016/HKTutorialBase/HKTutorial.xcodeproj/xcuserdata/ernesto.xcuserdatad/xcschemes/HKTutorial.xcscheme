@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,90 +14,91 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F103A0D51DB2875000B4BDF5"
-               BuildableName = "Hackathon2016.app"
-               BlueprintName = "Hackathon2016"
-               ReferencedContainer = "container:Hackathon2016.xcodeproj">
+               BlueprintIdentifier = "9486951219F2D9B8007584EF"
+               BuildableName = "HKTutorial.app"
+               BlueprintName = "HKTutorial"
+               ReferencedContainer = "container:HKTutorial.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9486952719F2D9B8007584EF"
+               BuildableName = "HKTutorialTests.xctest"
+               BlueprintName = "HKTutorialTests"
+               ReferencedContainer = "container:HKTutorial.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F103A0E91DB2875100B4BDF5"
-               BuildableName = "Hackathon2016Tests.xctest"
-               BlueprintName = "Hackathon2016Tests"
-               ReferencedContainer = "container:Hackathon2016.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F103A0F41DB2875100B4BDF5"
-               BuildableName = "Hackathon2016UITests.xctest"
-               BlueprintName = "Hackathon2016UITests"
-               ReferencedContainer = "container:Hackathon2016.xcodeproj">
+               BlueprintIdentifier = "9486952719F2D9B8007584EF"
+               BuildableName = "HKTutorialTests.xctest"
+               BlueprintName = "HKTutorialTests"
+               ReferencedContainer = "container:HKTutorial.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F103A0D51DB2875000B4BDF5"
-            BuildableName = "Hackathon2016.app"
-            BlueprintName = "Hackathon2016"
-            ReferencedContainer = "container:Hackathon2016.xcodeproj">
+            BlueprintIdentifier = "9486951219F2D9B8007584EF"
+            BuildableName = "HKTutorial.app"
+            BlueprintName = "HKTutorial"
+            ReferencedContainer = "container:HKTutorial.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
-      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F103A0D51DB2875000B4BDF5"
-            BuildableName = "Hackathon2016.app"
-            BlueprintName = "Hackathon2016"
-            ReferencedContainer = "container:Hackathon2016.xcodeproj">
+            BlueprintIdentifier = "9486951219F2D9B8007584EF"
+            BuildableName = "HKTutorial.app"
+            BlueprintName = "HKTutorial"
+            ReferencedContainer = "container:HKTutorial.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F103A0D51DB2875000B4BDF5"
-            BuildableName = "Hackathon2016.app"
-            BlueprintName = "Hackathon2016"
-            ReferencedContainer = "container:Hackathon2016.xcodeproj">
+            BlueprintIdentifier = "9486951219F2D9B8007584EF"
+            BuildableName = "HKTutorial.app"
+            BlueprintName = "HKTutorial"
+            ReferencedContainer = "container:HKTutorial.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

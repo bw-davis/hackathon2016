@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Athlete" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="bmi" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="day" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Day" inverseName="athlete" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <entity name="Day" syncable="YES">
+        <relationship name="athlete" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Athlete" inverseName="day" inverseEntity="Athlete" syncable="YES"/>
+        <relationship name="general" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="General" inverseName="day" inverseEntity="General" syncable="YES"/>
+        <relationship name="mental" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mental" inverseName="day" inverseEntity="Mental" syncable="YES"/>
+        <relationship name="physical" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Physical" inverseName="day" inverseEntity="Physical" syncable="YES"/>
+        <relationship name="social" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Social" inverseName="day" inverseEntity="Social" syncable="YES"/>
+        <relationship name="workload" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workload" inverseName="day" inverseEntity="Workload" syncable="YES"/>
+    </entity>
+    <entity name="General" syncable="YES">
+        <attribute name="q1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="q2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="q3" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="general" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <entity name="Mental" syncable="YES">
+        <attribute name="q1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="q2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="q3" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="mental" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <entity name="Physical" syncable="YES">
+        <attribute name="q1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="q2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="q3" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="q4" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="physical" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <entity name="Social" syncable="YES">
+        <attribute name="q1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="social" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <entity name="Workload" syncable="YES">
+        <attribute name="q1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="q2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="workload" inverseEntity="Day" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Athlete" positionX="-63" positionY="-18" width="128" height="150"/>
+        <element name="Day" positionX="-54" positionY="45" width="128" height="135"/>
+        <element name="General" positionX="-36" positionY="54" width="128" height="105"/>
+        <element name="Physical" positionX="-18" positionY="63" width="128" height="120"/>
+        <element name="Social" positionX="0" positionY="72" width="128" height="75"/>
+        <element name="Mental" positionX="18" positionY="81" width="128" height="105"/>
+        <element name="Workload" positionX="27" positionY="126" width="128" height="90"/>
+    </elements>
+</model>
