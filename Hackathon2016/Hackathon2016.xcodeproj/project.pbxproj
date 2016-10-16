@@ -18,6 +18,20 @@
 		F147520D1DB3033300FDE8F4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F147520B1DB3033300FDE8F4 /* Model.xcdatamodeld */; };
 		F147520F1DB3034600FDE8F4 /* CoreDataServices in Resources */ = {isa = PBXBuildFile; fileRef = F147520E1DB3034600FDE8F4 /* CoreDataServices */; };
 		F14752111DB3151B00FDE8F4 /* Question2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14752101DB3151B00FDE8F4 /* Question2ViewController.swift */; };
+		F1CDD8161DB3416400113B0D /* Question3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD8151DB3416400113B0D /* Question3ViewController.swift */; };
+		F1CDD8181DB341EE00113B0D /* Question4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD8171DB341EE00113B0D /* Question4ViewController.swift */; };
+		F1CDD81A1DB3428D00113B0D /* Question5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD8191DB3428D00113B0D /* Question5ViewController.swift */; };
+		F1CDD81C1DB3439200113B0D /* Question6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD81B1DB3439200113B0D /* Question6ViewController.swift */; };
+		F1CDD81E1DB3444800113B0D /* Question7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD81D1DB3444800113B0D /* Question7ViewController.swift */; };
+		F1CDD8201DB3451900113B0D /* Question8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD81F1DB3451900113B0D /* Question8ViewController.swift */; };
+		F1CDD8221DB3458700113B0D /* Question9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD8211DB3458700113B0D /* Question9ViewController.swift */; };
+		F1CDD8241DB3460900113B0D /* Question10ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD8231DB3460900113B0D /* Question10ViewController.swift */; };
+		F1CDD8261DB3466700113B0D /* Question11ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD8251DB3466700113B0D /* Question11ViewController.swift */; };
+		F1CDD8281DB3471C00113B0D /* Question12ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD8271DB3471C00113B0D /* Question12ViewController.swift */; };
+		F1CDD82A1DB3479200113B0D /* Question13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD8291DB3479200113B0D /* Question13ViewController.swift */; };
+		F1CDD82C1DB3481700113B0D /* Question14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD82B1DB3481700113B0D /* Question14ViewController.swift */; };
+		F1CDD82E1DB348BD00113B0D /* Question15ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD82D1DB348BD00113B0D /* Question15ViewController.swift */; };
+		F1CDD8301DB34AC000113B0D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CDD82F1DB34AC000113B0D /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +69,20 @@
 		F147520C1DB3033300FDE8F4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F147520E1DB3034600FDE8F4 /* CoreDataServices */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoreDataServices; path = Hackathon2016/CoreDataServices; sourceTree = "<group>"; };
 		F14752101DB3151B00FDE8F4 /* Question2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question2ViewController.swift; sourceTree = "<group>"; };
+		F1CDD8151DB3416400113B0D /* Question3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question3ViewController.swift; sourceTree = "<group>"; };
+		F1CDD8171DB341EE00113B0D /* Question4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question4ViewController.swift; sourceTree = "<group>"; };
+		F1CDD8191DB3428D00113B0D /* Question5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question5ViewController.swift; sourceTree = "<group>"; };
+		F1CDD81B1DB3439200113B0D /* Question6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question6ViewController.swift; sourceTree = "<group>"; };
+		F1CDD81D1DB3444800113B0D /* Question7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question7ViewController.swift; sourceTree = "<group>"; };
+		F1CDD81F1DB3451900113B0D /* Question8ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question8ViewController.swift; sourceTree = "<group>"; };
+		F1CDD8211DB3458700113B0D /* Question9ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question9ViewController.swift; sourceTree = "<group>"; };
+		F1CDD8231DB3460900113B0D /* Question10ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question10ViewController.swift; sourceTree = "<group>"; };
+		F1CDD8251DB3466700113B0D /* Question11ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question11ViewController.swift; sourceTree = "<group>"; };
+		F1CDD8271DB3471C00113B0D /* Question12ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question12ViewController.swift; sourceTree = "<group>"; };
+		F1CDD8291DB3479200113B0D /* Question13ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question13ViewController.swift; sourceTree = "<group>"; };
+		F1CDD82B1DB3481700113B0D /* Question14ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question14ViewController.swift; sourceTree = "<group>"; };
+		F1CDD82D1DB348BD00113B0D /* Question15ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question15ViewController.swift; sourceTree = "<group>"; };
+		F1CDD82F1DB34AC000113B0D /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +181,20 @@
 				F103A10B1DB29B7100B4BDF5 /* MainMenu.swift */,
 				EC68D65F1DB2AF230059E583 /* BaselineViewController.swift */,
 				F14752101DB3151B00FDE8F4 /* Question2ViewController.swift */,
+				F1CDD8151DB3416400113B0D /* Question3ViewController.swift */,
+				F1CDD8171DB341EE00113B0D /* Question4ViewController.swift */,
+				F1CDD8191DB3428D00113B0D /* Question5ViewController.swift */,
+				F1CDD81B1DB3439200113B0D /* Question6ViewController.swift */,
+				F1CDD81D1DB3444800113B0D /* Question7ViewController.swift */,
+				F1CDD81F1DB3451900113B0D /* Question8ViewController.swift */,
+				F1CDD8211DB3458700113B0D /* Question9ViewController.swift */,
+				F1CDD8231DB3460900113B0D /* Question10ViewController.swift */,
+				F1CDD8251DB3466700113B0D /* Question11ViewController.swift */,
+				F1CDD8271DB3471C00113B0D /* Question12ViewController.swift */,
+				F1CDD8291DB3479200113B0D /* Question13ViewController.swift */,
+				F1CDD82B1DB3481700113B0D /* Question14ViewController.swift */,
+				F1CDD82D1DB348BD00113B0D /* Question15ViewController.swift */,
+				F1CDD82F1DB34AC000113B0D /* DataViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -304,9 +346,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1CDD8301DB34AC000113B0D /* DataViewController.swift in Sources */,
+				F1CDD8221DB3458700113B0D /* Question9ViewController.swift in Sources */,
+				F1CDD82C1DB3481700113B0D /* Question14ViewController.swift in Sources */,
+				F1CDD82E1DB348BD00113B0D /* Question15ViewController.swift in Sources */,
+				F1CDD8241DB3460900113B0D /* Question10ViewController.swift in Sources */,
+				F1CDD8281DB3471C00113B0D /* Question12ViewController.swift in Sources */,
+				F1CDD8261DB3466700113B0D /* Question11ViewController.swift in Sources */,
+				F1CDD82A1DB3479200113B0D /* Question13ViewController.swift in Sources */,
 				F103A0DA1DB2875000B4BDF5 /* AppDelegate.swift in Sources */,
+				F1CDD81C1DB3439200113B0D /* Question6ViewController.swift in Sources */,
+				F1CDD8181DB341EE00113B0D /* Question4ViewController.swift in Sources */,
 				EC68D6601DB2AF230059E583 /* BaselineViewController.swift in Sources */,
+				F1CDD8161DB3416400113B0D /* Question3ViewController.swift in Sources */,
+				F1CDD81A1DB3428D00113B0D /* Question5ViewController.swift in Sources */,
+				F1CDD81E1DB3444800113B0D /* Question7ViewController.swift in Sources */,
 				F103A10C1DB29B7100B4BDF5 /* MainMenu.swift in Sources */,
+				F1CDD8201DB3451900113B0D /* Question8ViewController.swift in Sources */,
 				F14752111DB3151B00FDE8F4 /* Question2ViewController.swift in Sources */,
 				F147520D1DB3033300FDE8F4 /* Model.xcdatamodeld in Sources */,
 			);

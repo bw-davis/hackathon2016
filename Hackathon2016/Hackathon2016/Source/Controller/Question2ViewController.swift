@@ -14,11 +14,7 @@ class Question2ViewController: UIViewController {
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
     @IBOutlet var button4: UIButton!
-    @IBOutlet var button5: UIButton!
-    @IBOutlet var button6: UIButton!
-    @IBAction func nextButtonPressed(sender: UINavigationItem){
-        
-    }
+    
     @IBAction func startButtonPress1(button sender: UIButton){
         sender.backgroundColor = UIColor.cyanColor()
         switch sender {
@@ -32,21 +28,17 @@ class Question2ViewController: UIViewController {
             dataArray.append(3)
         case sender == button4:
             dataArray.append(4)
-        case sender == button5:
-            dataArray.append(5)
-        case sender == button6:
-            dataArray.append(6)
         default:
             break
         }
     }
     
     
-   /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let question2 = segue.destinationViewController as! Question2ViewController
-        question2.dataArray = self.dataArray
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let question3 = segue.destinationViewController as! Question3ViewController
+        question3.dataArray = self.dataArray
     }
-    */
+    
     
     override func viewDidLoad(){
         super.viewDidLoad()

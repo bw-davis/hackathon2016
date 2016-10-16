@@ -8,47 +8,41 @@
 
 import UIKit
 
-class BaselineViewController: UIViewController {
+class Question9ViewController: UIViewController {
     var dataArray: Array<Int> = []
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
     @IBOutlet var button4: UIButton!
-    @IBOutlet var button5: UIButton!
-    @IBOutlet var button6: UIButton!
     
     @IBAction func startButtonPress1(button sender: UIButton){
         sender.backgroundColor = UIColor.cyanColor()
         switch sender {
-        case button1:
+        case sender == button1:
             print("button1 was pressed")
             dataArray.append(1)
-        case button2:
+        case sender == button2:
             print("button2 was pressed")
             dataArray.append(2)
-        case button3:
+        case sender == button3:
             dataArray.append(3)
-        case button4:
+        case sender == button4:
             dataArray.append(4)
-        case button5:
-            dataArray.append(5)
-        case button6:
-            dataArray.append(6)
         default:
             break
         }
     }
     
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let question2 = segue.destinationViewController as! Question2ViewController
-        question2.dataArray = self.dataArray
-        button1.backgroundColor = UIColor.clearColor()
+        let question10 = segue.destinationViewController as! Question10ViewController
+        question10.dataArray = self.dataArray
     }
     
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
+        print(dataArray)
     }
 }
 

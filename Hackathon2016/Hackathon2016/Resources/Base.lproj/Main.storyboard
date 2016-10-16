@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="osk-O4-Ews">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="osk-O4-Ews">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -161,7 +162,6 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="zux-x6-vxY"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="Th5-4m-RZ0">
                             <connections>
-                                <action selector="nextButtonPressedWithSender:" destination="vUi-mX-Quc" id="QXY-2F-RSx"/>
                                 <segue destination="PYg-19-yDj" kind="show" id="QP4-Ga-Qsu"/>
                             </connections>
                         </barButtonItem>
@@ -179,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="1110" y="-55"/>
         </scene>
-        <!--Baseline-->
+        <!--Question2-->
         <scene sceneID="UFk-we-mG8">
             <objects>
-                <viewController title="Baseline" id="PYg-19-yDj" customClass="Question2ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Baseline" id="PYg-19-yDj" userLabel="Question2" customClass="Question2ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bs7-zV-Ara"/>
                         <viewControllerLayoutGuide type="bottom" id="1pu-6b-Sn9"/>
@@ -191,26 +191,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How did you feel today?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSm-q3-BbD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How did you feel today overall?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSm-q3-BbD">
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sA2-fi-xme">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Great!"/>
+                                <state key="normal" title="Great"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="PYg-19-yDj" eventType="primaryActionTriggered" id="PqO-tM-TKh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDk-Uq-koZ">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Pretty Good"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="PYg-19-yDj" eventType="primaryActionTriggered" id="LAM-ZC-cpm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Rx-3u-sey">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Alright"/>
+                                <state key="normal" title="Could Be Better"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="PYg-19-yDj" eventType="primaryActionTriggered" id="Hfw-GK-K2p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3U-OO-Wlr">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Could Be Better"/>
+                                <state key="normal" title="Not Good"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="PYg-19-yDj" eventType="primaryActionTriggered" id="10s-uu-dzc"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What made you feel that way?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WjJ-wN-Qpy">
                                 <nil key="textColor"/>
@@ -243,15 +255,21 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="sA2-fi-xme" id="tmu-Jn-reO"/>
+                        <outlet property="button2" destination="iDk-Uq-koZ" id="pQX-R0-Rgx"/>
+                        <outlet property="button3" destination="4Rx-3u-sey" id="N0C-rc-Sk4"/>
+                        <outlet property="button4" destination="o3U-OO-Wlr" id="9sT-2V-eR7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KOL-KI-mCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1831" y="-55"/>
         </scene>
-        <!--Baseline-->
+        <!--Question4-->
         <scene sceneID="nu5-BI-MXr">
             <objects>
-                <viewController title="Baseline" id="u5Z-cL-TcS" sceneMemberID="viewController">
+                <viewController title="Baseline" id="u5Z-cL-TcS" userLabel="Question4" customClass="Question4ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Bp-UZ-kF7"/>
                         <viewControllerLayoutGuide type="bottom" id="aWh-f5-GRY"/>
@@ -260,7 +278,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours of screen time did you have today? (Computer, phone, TV, etc.)" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTo-cu-cfZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours of screen time did you " textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTo-cu-cfZ">
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -268,18 +286,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-zR-xN4">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="4+"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="u5Z-cL-TcS" eventType="primaryActionTriggered" id="Nwj-W7-jE7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eT-kF-0ZT">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="u5Z-cL-TcS" eventType="primaryActionTriggered" id="q8A-o6-et3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXd-Fx-gUZ">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="u5Z-cL-TcS" eventType="primaryActionTriggered" id="xv8-mF-9ha"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mF3-QY-D6C">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="0-1"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="u5Z-cL-TcS" eventType="primaryActionTriggered" id="5Ab-sB-oGS"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Notes:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmx-GD-btW">
                                 <nil key="textColor"/>
@@ -296,21 +326,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="have today? (Computer, phone, TV, etc.)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4O-PS-paD">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482" green="1" blue="0.92939517810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mF3-QY-D6C" firstAttribute="top" secondItem="jXd-Fx-gUZ" secondAttribute="bottom" constant="30" id="4Q7-BA-V01"/>
-                            <constraint firstItem="iTo-cu-cfZ" firstAttribute="top" secondItem="8Bp-UZ-kF7" secondAttribute="bottom" constant="100" id="4pM-Ka-azY"/>
+                            <constraint firstItem="iTo-cu-cfZ" firstAttribute="top" secondItem="8Bp-UZ-kF7" secondAttribute="bottom" constant="70" id="4pM-Ka-azY"/>
                             <constraint firstItem="4eT-kF-0ZT" firstAttribute="centerX" secondItem="PI9-9a-nCj" secondAttribute="centerX" id="7H5-m6-lhE"/>
                             <constraint firstItem="jXd-Fx-gUZ" firstAttribute="centerX" secondItem="PI9-9a-nCj" secondAttribute="centerX" id="93l-Rh-eaI"/>
+                            <constraint firstItem="dZa-zR-xN4" firstAttribute="top" secondItem="t4O-PS-paD" secondAttribute="bottom" constant="30" id="Ao9-TL-yma"/>
                             <constraint firstItem="iTo-cu-cfZ" firstAttribute="centerX" secondItem="PI9-9a-nCj" secondAttribute="centerX" id="DRu-nj-0L0"/>
                             <constraint firstItem="jXd-Fx-gUZ" firstAttribute="top" secondItem="4eT-kF-0ZT" secondAttribute="bottom" constant="30" id="HKA-iO-xaX"/>
+                            <constraint firstItem="t4O-PS-paD" firstAttribute="top" secondItem="iTo-cu-cfZ" secondAttribute="bottom" id="Mn4-0c-z1G"/>
                             <constraint firstAttribute="trailing" secondItem="fmx-GD-btW" secondAttribute="trailing" constant="10" id="REg-HF-kXg"/>
-                            <constraint firstItem="dZa-zR-xN4" firstAttribute="top" secondItem="iTo-cu-cfZ" secondAttribute="bottom" constant="40" id="U5s-8S-TsK"/>
+                            <constraint firstItem="t4O-PS-paD" firstAttribute="leading" secondItem="PI9-9a-nCj" secondAttribute="leading" id="SSH-fm-q6C"/>
                             <constraint firstItem="dZa-zR-xN4" firstAttribute="centerX" secondItem="PI9-9a-nCj" secondAttribute="centerX" id="XdL-WW-zS0"/>
                             <constraint firstItem="mF3-QY-D6C" firstAttribute="centerX" secondItem="PI9-9a-nCj" secondAttribute="centerX" id="cPd-hO-4en"/>
                             <constraint firstItem="fmx-GD-btW" firstAttribute="leading" secondItem="PI9-9a-nCj" secondAttribute="leading" constant="10" id="hQF-gl-OIB"/>
                             <constraint firstItem="fmx-GD-btW" firstAttribute="top" secondItem="mF3-QY-D6C" secondAttribute="bottom" constant="40" id="rUZ-aK-pSP"/>
+                            <constraint firstAttribute="trailing" secondItem="t4O-PS-paD" secondAttribute="trailing" id="tFf-fg-N6g"/>
                             <constraint firstItem="4eT-kF-0ZT" firstAttribute="top" secondItem="dZa-zR-xN4" secondAttribute="bottom" constant="30" id="wqI-Mo-0ke"/>
                         </constraints>
                     </view>
@@ -322,15 +360,21 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="dZa-zR-xN4" id="0n6-Yj-2c1"/>
+                        <outlet property="button2" destination="4eT-kF-0ZT" id="vuG-Yn-S9z"/>
+                        <outlet property="button3" destination="jXd-Fx-gUZ" id="vep-fa-Xkg"/>
+                        <outlet property="button4" destination="mF3-QY-D6C" id="Ihf-N5-7Ye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2YK-GI-x8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3284" y="-55"/>
+            <point key="canvasLocation" x="3284" y="-55.322338830584712"/>
         </scene>
         <!--Question 3-->
         <scene sceneID="a2K-SC-eLg">
             <objects>
-                <viewController title="Question 3" id="LqJ-Qw-Lqs" sceneMemberID="viewController">
+                <viewController title="Question 3" id="LqJ-Qw-Lqs" customClass="Question3ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IKe-u7-hkW"/>
                         <viewControllerLayoutGuide type="bottom" id="iEl-Mv-B8b"/>
@@ -347,18 +391,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7g-PW-IMe">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="4+"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="LqJ-Qw-Lqs" eventType="primaryActionTriggered" id="2Oa-yd-VPS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9f-z7-oZx">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="LqJ-Qw-Lqs" eventType="primaryActionTriggered" id="Pof-aD-uWL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLV-UZ-NBj">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="LqJ-Qw-Lqs" eventType="primaryActionTriggered" id="3yj-Nj-zyY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KnA-sb-Diy">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="0-1"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="LqJ-Qw-Lqs" eventType="primaryActionTriggered" id="iJH-X2-1lM"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal specifics:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wdi-s9-RaS">
                                 <nil key="textColor"/>
@@ -401,6 +457,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="N7g-PW-IMe" id="e0k-28-4Ct"/>
+                        <outlet property="button2" destination="k9f-z7-oZx" id="B0w-4v-6Af"/>
+                        <outlet property="button3" destination="xLV-UZ-NBj" id="wAr-Ye-ncq"/>
+                        <outlet property="button4" destination="KnA-sb-Diy" id="eUb-11-C4q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9g-za-x9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -409,7 +471,7 @@
         <!--Baseline-->
         <scene sceneID="4FC-ds-vOv">
             <objects>
-                <viewController title="Baseline" id="NHW-Z4-CsV" sceneMemberID="viewController">
+                <viewController title="Baseline" id="NHW-Z4-CsV" customClass="Question6ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GJ8-Rc-5e9"/>
                         <viewControllerLayoutGuide type="bottom" id="J97-Jh-OVM"/>
@@ -418,7 +480,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many alcoholic beverages have you consumed in the last 24 hours?" textAlignment="right" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nl-aV-m1D">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many alcoholic beverages have you " textAlignment="right" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nl-aV-m1D">
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -426,18 +488,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCI-mc-jJ3">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="5+"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="NHW-Z4-CsV" eventType="primaryActionTriggered" id="Fb7-Ud-kKs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQM-xa-Isr">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="3-4"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="NHW-Z4-CsV" eventType="primaryActionTriggered" id="fXz-k4-gu2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bg7-WN-Pce">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="1-2"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="NHW-Z4-CsV" eventType="primaryActionTriggered" id="QZI-zq-wT1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ot5-qP-yLr">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="NHW-Z4-CsV" eventType="primaryActionTriggered" id="uMV-ah-IVv"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Details:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BqF-M3-zB5">
                                 <nil key="textColor"/>
@@ -454,21 +528,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="consumed in the last 24 hours?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHG-H0-BYi">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482" green="1" blue="0.92939517810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BqF-M3-zB5" firstAttribute="top" secondItem="ot5-qP-yLr" secondAttribute="bottom" constant="40" id="01I-kP-5Zr"/>
                             <constraint firstItem="bg7-WN-Pce" firstAttribute="centerX" secondItem="plC-8J-bKg" secondAttribute="centerX" id="2WZ-tg-eOq"/>
                             <constraint firstItem="5nl-aV-m1D" firstAttribute="centerX" secondItem="plC-8J-bKg" secondAttribute="centerX" id="HRq-2M-QCw"/>
+                            <constraint firstItem="jHG-H0-BYi" firstAttribute="top" secondItem="5nl-aV-m1D" secondAttribute="bottom" id="MGk-ez-30a"/>
+                            <constraint firstItem="QCI-mc-jJ3" firstAttribute="top" secondItem="jHG-H0-BYi" secondAttribute="bottom" constant="40" id="Nst-T0-jzC"/>
                             <constraint firstItem="kQM-xa-Isr" firstAttribute="centerX" secondItem="plC-8J-bKg" secondAttribute="centerX" id="Oh5-nP-WTM"/>
+                            <constraint firstItem="jHG-H0-BYi" firstAttribute="leading" secondItem="plC-8J-bKg" secondAttribute="leading" id="QOG-I6-GSR"/>
                             <constraint firstItem="BqF-M3-zB5" firstAttribute="leading" secondItem="plC-8J-bKg" secondAttribute="leading" constant="10" id="RDg-if-1SX"/>
                             <constraint firstItem="ot5-qP-yLr" firstAttribute="top" secondItem="bg7-WN-Pce" secondAttribute="bottom" constant="30" id="Tc3-3p-fBP"/>
+                            <constraint firstAttribute="trailing" secondItem="jHG-H0-BYi" secondAttribute="trailing" id="VF7-r4-D6s"/>
                             <constraint firstAttribute="trailing" secondItem="BqF-M3-zB5" secondAttribute="trailing" constant="10" id="XDy-Pl-4OK"/>
                             <constraint firstItem="kQM-xa-Isr" firstAttribute="top" secondItem="QCI-mc-jJ3" secondAttribute="bottom" constant="30" id="XbK-XO-fej"/>
                             <constraint firstItem="bg7-WN-Pce" firstAttribute="top" secondItem="kQM-xa-Isr" secondAttribute="bottom" constant="30" id="aPw-pa-skq"/>
                             <constraint firstItem="QCI-mc-jJ3" firstAttribute="centerX" secondItem="plC-8J-bKg" secondAttribute="centerX" id="adJ-5Z-tYh"/>
-                            <constraint firstItem="QCI-mc-jJ3" firstAttribute="top" secondItem="5nl-aV-m1D" secondAttribute="bottom" constant="40" id="lRY-Vb-YsG"/>
-                            <constraint firstItem="5nl-aV-m1D" firstAttribute="top" secondItem="GJ8-Rc-5e9" secondAttribute="bottom" constant="110" id="n8l-cx-L9w"/>
+                            <constraint firstItem="5nl-aV-m1D" firstAttribute="top" secondItem="GJ8-Rc-5e9" secondAttribute="bottom" constant="80" id="n8l-cx-L9w"/>
                             <constraint firstItem="ot5-qP-yLr" firstAttribute="centerX" secondItem="plC-8J-bKg" secondAttribute="centerX" id="q4U-MM-wV2"/>
                         </constraints>
                     </view>
@@ -480,6 +562,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="QCI-mc-jJ3" id="tnf-G3-QmD"/>
+                        <outlet property="button2" destination="kQM-xa-Isr" id="MMu-hX-61s"/>
+                        <outlet property="button3" destination="bg7-WN-Pce" id="lnF-br-ytE"/>
+                        <outlet property="button4" destination="ot5-qP-yLr" id="VwB-DD-ulD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dBG-xQ-PIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -488,7 +576,7 @@
         <!--Baseline-->
         <scene sceneID="mSO-Vn-epu">
             <objects>
-                <viewController title="Baseline" id="GuK-Bz-pjl" sceneMemberID="viewController">
+                <viewController title="Baseline" id="GuK-Bz-pjl" customClass="Question5ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zpL-Ft-6r2"/>
                         <viewControllerLayoutGuide type="bottom" id="ykg-Xg-8gQ"/>
@@ -497,33 +585,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1w-7H-jvE">
-                                <attributedString key="attributedText">
-                                    <fragment content="How many hours of physical activity did you complete today?">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours of physical activity did " textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1w-7H-jvE">
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvR-Ea-bVc">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="5+"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="GuK-Bz-pjl" eventType="primaryActionTriggered" id="ocm-iE-5vS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUy-gY-LXs">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="3-4"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="GuK-Bz-pjl" eventType="primaryActionTriggered" id="EYY-XB-EPI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEd-9t-oZX">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="1-2"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="GuK-Bz-pjl" eventType="primaryActionTriggered" id="NNZ-lI-fth"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0b-uh-5Lt">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="0-1"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="GuK-Bz-pjl" eventType="primaryActionTriggered" id="oEF-JW-zjB"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Workouts:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ni-2r-dAj">
                                 <nil key="textColor"/>
@@ -540,21 +633,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you complete today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyV-gw-jSh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482" green="1" blue="0.92939517810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Y0b-uh-5Lt" firstAttribute="top" secondItem="lEd-9t-oZX" secondAttribute="bottom" constant="30" id="9Ci-WW-c1k"/>
-                            <constraint firstItem="jvR-Ea-bVc" firstAttribute="top" secondItem="b1w-7H-jvE" secondAttribute="bottom" constant="40" id="GBH-2b-PDN"/>
                             <constraint firstItem="mUy-gY-LXs" firstAttribute="centerX" secondItem="DFt-ED-9Vg" secondAttribute="centerX" id="Hah-1o-lCr"/>
+                            <constraint firstAttribute="trailing" secondItem="zyV-gw-jSh" secondAttribute="trailing" id="Iiz-Mc-Sno"/>
+                            <constraint firstItem="zyV-gw-jSh" firstAttribute="top" secondItem="b1w-7H-jvE" secondAttribute="bottom" id="PX8-SV-g7O"/>
                             <constraint firstItem="0Ni-2r-dAj" firstAttribute="top" secondItem="Y0b-uh-5Lt" secondAttribute="bottom" constant="40" id="Tdz-9i-yJA"/>
                             <constraint firstItem="0Ni-2r-dAj" firstAttribute="leading" secondItem="DFt-ED-9Vg" secondAttribute="leading" constant="10" id="VGk-Mw-gEF"/>
                             <constraint firstItem="Y0b-uh-5Lt" firstAttribute="centerX" secondItem="DFt-ED-9Vg" secondAttribute="centerX" id="W6Q-0m-nMh"/>
                             <constraint firstItem="mUy-gY-LXs" firstAttribute="top" secondItem="jvR-Ea-bVc" secondAttribute="bottom" constant="30" id="Wmz-Kc-Hf5"/>
                             <constraint firstItem="lEd-9t-oZX" firstAttribute="centerX" secondItem="DFt-ED-9Vg" secondAttribute="centerX" id="YRx-kR-lgm"/>
-                            <constraint firstItem="b1w-7H-jvE" firstAttribute="top" secondItem="zpL-Ft-6r2" secondAttribute="bottom" constant="100" id="aud-tq-AoX"/>
+                            <constraint firstItem="b1w-7H-jvE" firstAttribute="top" secondItem="zpL-Ft-6r2" secondAttribute="bottom" constant="70" id="aud-tq-AoX"/>
                             <constraint firstItem="lEd-9t-oZX" firstAttribute="top" secondItem="mUy-gY-LXs" secondAttribute="bottom" constant="30" id="cIq-rg-U3f"/>
                             <constraint firstAttribute="trailing" secondItem="0Ni-2r-dAj" secondAttribute="trailing" constant="10" id="j0R-sz-EDD"/>
                             <constraint firstItem="jvR-Ea-bVc" firstAttribute="centerX" secondItem="DFt-ED-9Vg" secondAttribute="centerX" id="nvA-zL-OZz"/>
+                            <constraint firstItem="zyV-gw-jSh" firstAttribute="leading" secondItem="DFt-ED-9Vg" secondAttribute="leading" id="p7v-dS-lkL"/>
+                            <constraint firstItem="jvR-Ea-bVc" firstAttribute="top" secondItem="zyV-gw-jSh" secondAttribute="bottom" constant="40" id="qze-8Z-gyz"/>
                             <constraint firstItem="b1w-7H-jvE" firstAttribute="centerX" secondItem="DFt-ED-9Vg" secondAttribute="centerX" id="ySq-EO-C3f"/>
                         </constraints>
                     </view>
@@ -566,6 +667,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="jvR-Ea-bVc" id="dUq-WQ-oAP"/>
+                        <outlet property="button2" destination="mUy-gY-LXs" id="ahC-hI-eOU"/>
+                        <outlet property="button3" destination="lEd-9t-oZX" id="ChX-Od-Q54"/>
+                        <outlet property="button4" destination="Y0b-uh-5Lt" id="t2r-T5-Ieh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5O-lM-wbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -574,7 +681,7 @@
         <!--Baseline-->
         <scene sceneID="AN2-hm-YdU">
             <objects>
-                <viewController title="Baseline" id="en4-bX-wng" sceneMemberID="viewController">
+                <viewController title="Baseline" id="en4-bX-wng" customClass="Question8ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tb2-aa-uEQ"/>
                         <viewControllerLayoutGuide type="bottom" id="xKy-YX-EJ0"/>
@@ -583,33 +690,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tM-Ay-WKX">
-                                <attributedString key="attributedText">
-                                    <fragment content="Do you feel lonely?">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much did you have trouble concentrating on" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tM-Ay-WKX">
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR5-U9-X4l">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Not at all!"/>
+                                <state key="normal" title="All Day"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="en4-bX-wng" eventType="primaryActionTriggered" id="vvR-Ef-cPy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40z-DW-0fc">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Occasionally, but it's fleeting."/>
+                                <state key="normal" title="Most Of The Day"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="en4-bX-wng" eventType="primaryActionTriggered" id="wsi-Sd-Wsz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynz-uB-ClJ">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Somewhat - I'd like to be around people more often."/>
+                                <state key="normal" title="Part Of The Day"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="en4-bX-wng" eventType="primaryActionTriggered" id="R1p-O7-22G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMU-Ky-ysg">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Yes, but I'm working on it."/>
+                                <state key="normal" title="Not At All"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="en4-bX-wng" eventType="primaryActionTriggered" id="sgs-Ak-cug"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Why? What would help?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b4y-3e-z9f">
                                 <nil key="textColor"/>
@@ -626,6 +738,11 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="things, such as schoolwork or watching tv?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgt-fd-PGc">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482" green="1" blue="0.92939517810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -634,14 +751,17 @@
                             <constraint firstItem="ynz-uB-ClJ" firstAttribute="centerX" secondItem="P42-JF-oM4" secondAttribute="centerX" id="7SN-Oz-L5M"/>
                             <constraint firstItem="4tM-Ay-WKX" firstAttribute="centerX" secondItem="P42-JF-oM4" secondAttribute="centerX" id="8Fs-wa-Yj4"/>
                             <constraint firstItem="40z-DW-0fc" firstAttribute="centerX" secondItem="P42-JF-oM4" secondAttribute="centerX" id="EK7-31-9jr"/>
-                            <constraint firstItem="JR5-U9-X4l" firstAttribute="top" secondItem="4tM-Ay-WKX" secondAttribute="bottom" constant="40" id="OfX-fS-13Q"/>
+                            <constraint firstItem="Hgt-fd-PGc" firstAttribute="top" secondItem="4tM-Ay-WKX" secondAttribute="bottom" id="Gdd-PG-xke"/>
+                            <constraint firstAttribute="trailing" secondItem="Hgt-fd-PGc" secondAttribute="trailing" id="Q2D-Ke-Vrb"/>
                             <constraint firstItem="JR5-U9-X4l" firstAttribute="centerX" secondItem="P42-JF-oM4" secondAttribute="centerX" id="RAO-N4-qT1"/>
                             <constraint firstItem="b4y-3e-z9f" firstAttribute="top" secondItem="CMU-Ky-ysg" secondAttribute="bottom" constant="40" id="TkB-Yd-bOi"/>
                             <constraint firstItem="CMU-Ky-ysg" firstAttribute="centerX" secondItem="P42-JF-oM4" secondAttribute="centerX" id="f8J-d9-zF5"/>
                             <constraint firstItem="b4y-3e-z9f" firstAttribute="leading" secondItem="P42-JF-oM4" secondAttribute="leading" constant="10" id="gwG-2Z-Mrj"/>
                             <constraint firstItem="40z-DW-0fc" firstAttribute="top" secondItem="JR5-U9-X4l" secondAttribute="bottom" constant="30" id="jC9-bP-0PP"/>
+                            <constraint firstItem="Hgt-fd-PGc" firstAttribute="leading" secondItem="P42-JF-oM4" secondAttribute="leading" id="uCb-5A-3Tf"/>
+                            <constraint firstItem="JR5-U9-X4l" firstAttribute="top" secondItem="Hgt-fd-PGc" secondAttribute="bottom" constant="40" id="vor-vy-ZPh"/>
                             <constraint firstAttribute="trailing" secondItem="b4y-3e-z9f" secondAttribute="trailing" constant="10" id="xZq-la-ftO"/>
-                            <constraint firstItem="4tM-Ay-WKX" firstAttribute="top" secondItem="tb2-aa-uEQ" secondAttribute="bottom" constant="100" id="zCn-hI-xee"/>
+                            <constraint firstItem="4tM-Ay-WKX" firstAttribute="top" secondItem="tb2-aa-uEQ" secondAttribute="bottom" constant="90" id="zCn-hI-xee"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Question 8" id="gfw-a4-yLA">
@@ -652,6 +772,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="JR5-U9-X4l" id="qLm-lO-glw"/>
+                        <outlet property="button2" destination="40z-DW-0fc" id="E6w-s5-ywC"/>
+                        <outlet property="button3" destination="ynz-uB-ClJ" id="jxP-9q-Qxu"/>
+                        <outlet property="button4" destination="CMU-Ky-ysg" id="ade-Fm-Pgz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKh-Nu-8wD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -660,7 +786,7 @@
         <!--Baseline-->
         <scene sceneID="EpJ-au-8OK">
             <objects>
-                <viewController title="Baseline" id="HJW-DT-k7c" sceneMemberID="viewController">
+                <viewController title="Baseline" id="HJW-DT-k7c" customClass="Question7ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qc2-C1-pX1"/>
                         <viewControllerLayoutGuide type="bottom" id="ijw-kj-Lgr"/>
@@ -669,33 +795,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fce-jW-c2K">
-                                <attributedString key="attributedText">
-                                    <fragment content="How many close relationships did you foster today?">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much of the day did you feel tired" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fce-jW-c2K">
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4On-oY-76Q">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="5+"/>
+                                <state key="normal" title="All day"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="HJW-DT-k7c" eventType="primaryActionTriggered" id="fBa-Xl-Ife"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ih-iD-upk">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="3-4"/>
+                                <state key="normal" title="Most of the day"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="HJW-DT-k7c" eventType="primaryActionTriggered" id="myt-Nx-jzS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yk4-Nb-YSH">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="1-2"/>
+                                <state key="normal" title="Part of the day"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="HJW-DT-k7c" eventType="primaryActionTriggered" id="TR2-Y8-lJG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkF-Yf-Q5H">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="0"/>
+                                <state key="normal" title="Not at all"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="HJW-DT-k7c" eventType="primaryActionTriggered" id="JSp-X5-KZv"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Details:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhj-Ng-fCX">
                                 <nil key="textColor"/>
@@ -712,19 +843,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or have little energy?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jag-E0-kfw">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482" green="1" blue="0.92939517810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4On-oY-76Q" firstAttribute="top" secondItem="fce-jW-c2K" secondAttribute="bottom" constant="40" id="22B-bd-JZ0"/>
                             <constraint firstItem="Yk4-Nb-YSH" firstAttribute="centerX" secondItem="28G-Tm-n4x" secondAttribute="centerX" id="7qP-08-C4k"/>
                             <constraint firstItem="QkF-Yf-Q5H" firstAttribute="top" secondItem="Yk4-Nb-YSH" secondAttribute="bottom" constant="30" id="9nR-Gg-ptG"/>
                             <constraint firstItem="bhj-Ng-fCX" firstAttribute="leading" secondItem="28G-Tm-n4x" secondAttribute="leading" constant="10" id="Jv2-1i-dlx"/>
                             <constraint firstItem="QkF-Yf-Q5H" firstAttribute="centerX" secondItem="28G-Tm-n4x" secondAttribute="centerX" id="Nj3-o5-e7r"/>
+                            <constraint firstItem="Jag-E0-kfw" firstAttribute="top" secondItem="fce-jW-c2K" secondAttribute="bottom" id="QKz-p6-Wi5"/>
                             <constraint firstItem="bhj-Ng-fCX" firstAttribute="top" secondItem="QkF-Yf-Q5H" secondAttribute="bottom" constant="40" id="SgG-K7-uCJ"/>
+                            <constraint firstItem="4On-oY-76Q" firstAttribute="top" secondItem="Jag-E0-kfw" secondAttribute="bottom" constant="40" id="UjB-59-nXO"/>
+                            <constraint firstItem="Jag-E0-kfw" firstAttribute="leading" secondItem="28G-Tm-n4x" secondAttribute="leading" id="Wlh-jp-fAK"/>
                             <constraint firstItem="6ih-iD-upk" firstAttribute="top" secondItem="4On-oY-76Q" secondAttribute="bottom" constant="30" id="alJ-8b-ZeS"/>
                             <constraint firstItem="4On-oY-76Q" firstAttribute="centerX" secondItem="28G-Tm-n4x" secondAttribute="centerX" id="cFo-6z-B76"/>
-                            <constraint firstItem="fce-jW-c2K" firstAttribute="top" secondItem="qc2-C1-pX1" secondAttribute="bottom" constant="110" id="ffd-VM-43Q"/>
+                            <constraint firstItem="fce-jW-c2K" firstAttribute="top" secondItem="qc2-C1-pX1" secondAttribute="bottom" constant="80" id="ffd-VM-43Q"/>
                             <constraint firstAttribute="trailing" secondItem="bhj-Ng-fCX" secondAttribute="trailing" constant="10" id="gDe-2d-a2i"/>
+                            <constraint firstAttribute="trailing" secondItem="Jag-E0-kfw" secondAttribute="trailing" id="hn3-dh-5aV"/>
                             <constraint firstItem="Yk4-Nb-YSH" firstAttribute="top" secondItem="6ih-iD-upk" secondAttribute="bottom" constant="30" id="mHh-uS-jSm"/>
                             <constraint firstItem="6ih-iD-upk" firstAttribute="centerX" secondItem="28G-Tm-n4x" secondAttribute="centerX" id="oHC-cM-yIt"/>
                             <constraint firstItem="fce-jW-c2K" firstAttribute="centerX" secondItem="28G-Tm-n4x" secondAttribute="centerX" id="oYk-kW-KwN"/>
@@ -738,6 +877,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="4On-oY-76Q" id="s23-vW-k1I"/>
+                        <outlet property="button2" destination="6ih-iD-upk" id="DWa-T1-34M"/>
+                        <outlet property="button3" destination="Yk4-Nb-YSH" id="hzU-Me-Dda"/>
+                        <outlet property="button4" destination="QkF-Yf-Q5H" id="IYa-qc-4tI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ji-px-tNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -746,7 +891,7 @@
         <!--Baseline-->
         <scene sceneID="DjD-2u-QGn">
             <objects>
-                <viewController title="Baseline" id="TZ0-Xe-Qg7" sceneMemberID="viewController">
+                <viewController title="Baseline" id="TZ0-Xe-Qg7" customClass="Question9ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Agy-is-nrX"/>
                         <viewControllerLayoutGuide type="bottom" id="Dxe-z7-V2M"/>
@@ -755,33 +900,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZn-It-Um2">
-                                <attributedString key="attributedText">
-                                    <fragment content="How often do you feel sad?">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How often did you feel sad or down today?" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZn-It-Um2">
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ne-G7-Ztf">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Rarely."/>
+                                <state key="normal" title="Almost Constantly"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="TZ0-Xe-Qg7" eventType="primaryActionTriggered" id="35W-0b-ffR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qy-kx-bY8">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Once in a while."/>
+                                <state key="normal" title="A Lot"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="TZ0-Xe-Qg7" eventType="primaryActionTriggered" id="REH-1J-VWi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbG-uw-5xD">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Frequently."/>
+                                <state key="normal" title="A Little"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="TZ0-Xe-Qg7" eventType="primaryActionTriggered" id="ooe-Vd-huv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaI-B0-cZH">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="All the time."/>
+                                <state key="normal" title="Not At All"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="TZ0-Xe-Qg7" eventType="primaryActionTriggered" id="Ufx-O3-chq"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Why? What would help?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WAS-gJ-tZv">
                                 <nil key="textColor"/>
@@ -824,6 +974,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="4Ne-G7-Ztf" id="55h-iG-mRa"/>
+                        <outlet property="button2" destination="1Qy-kx-bY8" id="Rf2-va-pRt"/>
+                        <outlet property="button3" destination="MbG-uw-5xD" id="J5e-pj-im5"/>
+                        <outlet property="button4" destination="SaI-B0-cZH" id="HVJ-Ca-mMj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fd-00-X3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -832,7 +988,7 @@
         <!--Baseline-->
         <scene sceneID="DRh-av-1no">
             <objects>
-                <viewController title="Baseline" id="4WD-oa-Lks" sceneMemberID="viewController">
+                <viewController title="Baseline" id="4WD-oa-Lks" customClass="Question10ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ss0-HE-PiF"/>
                         <viewControllerLayoutGuide type="bottom" id="OcX-Cp-IYQ"/>
@@ -856,18 +1012,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Um-6N-bJ5">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Nope! I'm able to balance everything."/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="4WD-oa-Lks" eventType="primaryActionTriggered" id="5YZ-ZQ-pP0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqZ-HG-Yx2">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Slightly, but it's a work in progress."/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="4WD-oa-Lks" eventType="primaryActionTriggered" id="KpK-z6-GkG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDA-KN-cJu">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Yes, but not always."/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="4WD-oa-Lks" eventType="primaryActionTriggered" id="nxm-Wq-wY6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMM-7m-DmW">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Yes, I have a lot going on."/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="4WD-oa-Lks" eventType="primaryActionTriggered" id="0Sc-al-s9O"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What would help?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GAk-3y-2de">
                                 <nil key="textColor"/>
@@ -910,6 +1078,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="6Um-6N-bJ5" id="k8H-iz-8oo"/>
+                        <outlet property="button2" destination="EqZ-HG-Yx2" id="goJ-sE-9zD"/>
+                        <outlet property="button3" destination="ZDA-KN-cJu" id="bYD-mq-sqe"/>
+                        <outlet property="button4" destination="hMM-7m-DmW" id="bzt-kf-iGg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRl-Gz-5ef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -918,7 +1092,7 @@
         <!--Baseline-->
         <scene sceneID="FJD-zd-acQ">
             <objects>
-                <viewController title="Baseline" id="qFr-cD-7Cc" sceneMemberID="viewController">
+                <viewController title="Baseline" id="qFr-cD-7Cc" customClass="Question11ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zQQ-d1-QVE"/>
                         <viewControllerLayoutGuide type="bottom" id="wBy-Ng-EJq"/>
@@ -927,33 +1101,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5c-aP-mpa">
-                                <attributedString key="attributedText">
-                                    <fragment content="How much school-related work do you have today?">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much school-related work did " textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5c-aP-mpa">
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BW9-F4-N5t">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="None! I did it all."/>
+                                <state key="normal" title="None!"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="qFr-cD-7Cc" eventType="primaryActionTriggered" id="tKE-Cj-10z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhS-Wf-vly">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Not much, totally doable!"/>
+                                <state key="normal" title="Not much, it's doable"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="qFr-cD-7Cc" eventType="primaryActionTriggered" id="gjV-HM-e6d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rO-GL-Pof">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="A good amout to do."/>
+                                <state key="normal" title="A Good Amount"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="qFr-cD-7Cc" eventType="primaryActionTriggered" id="Tsz-1g-q0C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqq-kZ-6p4">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="A ton, I may not finish tonight."/>
+                                <state key="normal" title="A Ton, I Won't Finish Today"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="qFr-cD-7Cc" eventType="primaryActionTriggered" id="4dS-lU-VQ7"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Specifics:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nn3-90-FXn">
                                 <nil key="textColor"/>
@@ -970,20 +1149,28 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you have today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cM-1M-SpC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482" green="1" blue="0.92939517810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Nn3-90-FXn" firstAttribute="top" secondItem="Wqq-kZ-6p4" secondAttribute="bottom" constant="40" id="1ud-O3-V4T"/>
                             <constraint firstItem="Wqq-kZ-6p4" firstAttribute="top" secondItem="1rO-GL-Pof" secondAttribute="bottom" constant="30" id="2Ia-xd-e1X"/>
                             <constraint firstItem="Nn3-90-FXn" firstAttribute="leading" secondItem="eNl-CN-QcF" secondAttribute="leading" constant="10" id="5Jd-Pv-mZL"/>
-                            <constraint firstItem="I5c-aP-mpa" firstAttribute="top" secondItem="zQQ-d1-QVE" secondAttribute="bottom" constant="100" id="CqR-QF-AdW"/>
+                            <constraint firstItem="BW9-F4-N5t" firstAttribute="top" secondItem="7cM-1M-SpC" secondAttribute="bottom" constant="40" id="9kd-sa-wqj"/>
+                            <constraint firstItem="I5c-aP-mpa" firstAttribute="top" secondItem="zQQ-d1-QVE" secondAttribute="bottom" constant="90" id="CqR-QF-AdW"/>
+                            <constraint firstAttribute="trailing" secondItem="7cM-1M-SpC" secondAttribute="trailing" id="MA1-za-7fl"/>
                             <constraint firstAttribute="trailing" secondItem="Nn3-90-FXn" secondAttribute="trailing" constant="10" id="PR8-lT-fqg"/>
                             <constraint firstItem="BW9-F4-N5t" firstAttribute="centerX" secondItem="eNl-CN-QcF" secondAttribute="centerX" id="Zp8-2B-bh3"/>
                             <constraint firstItem="1rO-GL-Pof" firstAttribute="centerX" secondItem="eNl-CN-QcF" secondAttribute="centerX" id="aMg-D2-jqa"/>
                             <constraint firstItem="1rO-GL-Pof" firstAttribute="top" secondItem="mhS-Wf-vly" secondAttribute="bottom" constant="30" id="aTX-8K-LKa"/>
+                            <constraint firstItem="7cM-1M-SpC" firstAttribute="top" secondItem="I5c-aP-mpa" secondAttribute="bottom" id="eiK-dn-1Wm"/>
                             <constraint firstItem="Wqq-kZ-6p4" firstAttribute="centerX" secondItem="eNl-CN-QcF" secondAttribute="centerX" id="f86-by-P51"/>
                             <constraint firstItem="I5c-aP-mpa" firstAttribute="centerX" secondItem="eNl-CN-QcF" secondAttribute="centerX" id="mU9-5D-FtM"/>
-                            <constraint firstItem="BW9-F4-N5t" firstAttribute="top" secondItem="I5c-aP-mpa" secondAttribute="bottom" constant="40" id="sQn-sP-ir0"/>
+                            <constraint firstItem="7cM-1M-SpC" firstAttribute="leading" secondItem="eNl-CN-QcF" secondAttribute="leading" id="xA8-jC-f8E"/>
                             <constraint firstItem="mhS-Wf-vly" firstAttribute="top" secondItem="BW9-F4-N5t" secondAttribute="bottom" constant="30" id="xqe-ph-bGn"/>
                             <constraint firstItem="mhS-Wf-vly" firstAttribute="centerX" secondItem="eNl-CN-QcF" secondAttribute="centerX" id="xwa-2d-5H6"/>
                         </constraints>
@@ -996,6 +1183,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="BW9-F4-N5t" id="VRj-Bl-mRL"/>
+                        <outlet property="button2" destination="mhS-Wf-vly" id="hGa-9m-ig2"/>
+                        <outlet property="button3" destination="1rO-GL-Pof" id="w4z-PC-Yw9"/>
+                        <outlet property="button4" destination="Wqq-kZ-6p4" id="WjG-eL-KsP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6A-L7-iUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1004,7 +1197,7 @@
         <!--Baseline-->
         <scene sceneID="p9I-u1-OM9">
             <objects>
-                <viewController title="Baseline" id="ypX-s5-oN9" sceneMemberID="viewController">
+                <viewController title="Baseline" id="ypX-s5-oN9" customClass="Question12ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3qm-yK-2nG"/>
                         <viewControllerLayoutGuide type="bottom" id="BbB-VW-6xL"/>
@@ -1013,33 +1206,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRC-4Z-I20">
-                                <attributedString key="attributedText">
-                                    <fragment content="How many hours of free time did you have today? (Time for you to be you)">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many hours of free time did you have " textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRC-4Z-I20">
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z55-W2-PJP">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="5+"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="ypX-s5-oN9" eventType="primaryActionTriggered" id="iW3-oD-4Zf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81E-yP-0go">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="3-4"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="ypX-s5-oN9" eventType="primaryActionTriggered" id="KzB-iu-UUT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uux-1n-6a1">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="1-2"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="ypX-s5-oN9" eventType="primaryActionTriggered" id="Ktk-NT-Pqo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8b-8v-aUx">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="0-1"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="ypX-s5-oN9" eventType="primaryActionTriggered" id="jTP-8E-mDp"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Specifics:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j1y-af-vXs">
                                 <nil key="textColor"/>
@@ -1056,21 +1254,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="today? (Time for you to be you)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUc-0O-6Um">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482" green="1" blue="0.92939517810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="j1y-af-vXs" firstAttribute="top" secondItem="y8b-8v-aUx" secondAttribute="bottom" constant="40" id="51M-O4-V1b"/>
+                            <constraint firstItem="oUc-0O-6Um" firstAttribute="leading" secondItem="2jO-Ug-J7P" secondAttribute="leading" id="8il-9a-MyS"/>
                             <constraint firstItem="j1y-af-vXs" firstAttribute="leading" secondItem="2jO-Ug-J7P" secondAttribute="leading" constant="10" id="E7B-6e-v7O"/>
                             <constraint firstItem="y8b-8v-aUx" firstAttribute="top" secondItem="Uux-1n-6a1" secondAttribute="bottom" constant="30" id="E7J-Jg-Fgm"/>
                             <constraint firstItem="LRC-4Z-I20" firstAttribute="centerX" secondItem="2jO-Ug-J7P" secondAttribute="centerX" id="G9j-E5-BPU"/>
+                            <constraint firstAttribute="trailing" secondItem="oUc-0O-6Um" secondAttribute="trailing" id="R9X-7L-2VK"/>
                             <constraint firstItem="Uux-1n-6a1" firstAttribute="centerX" secondItem="2jO-Ug-J7P" secondAttribute="centerX" id="Z51-X4-85Z"/>
                             <constraint firstItem="81E-yP-0go" firstAttribute="top" secondItem="z55-W2-PJP" secondAttribute="bottom" constant="30" id="aRM-sk-ZPl"/>
-                            <constraint firstItem="z55-W2-PJP" firstAttribute="top" secondItem="LRC-4Z-I20" secondAttribute="bottom" constant="40" id="c0E-be-9xa"/>
                             <constraint firstItem="z55-W2-PJP" firstAttribute="centerX" secondItem="2jO-Ug-J7P" secondAttribute="centerX" id="gyf-7d-Ywz"/>
                             <constraint firstItem="81E-yP-0go" firstAttribute="centerX" secondItem="2jO-Ug-J7P" secondAttribute="centerX" id="icr-uv-a11"/>
-                            <constraint firstItem="LRC-4Z-I20" firstAttribute="top" secondItem="3qm-yK-2nG" secondAttribute="bottom" constant="100" id="mhP-93-Kyj"/>
+                            <constraint firstItem="LRC-4Z-I20" firstAttribute="top" secondItem="3qm-yK-2nG" secondAttribute="bottom" constant="90" id="mhP-93-Kyj"/>
                             <constraint firstItem="y8b-8v-aUx" firstAttribute="centerX" secondItem="2jO-Ug-J7P" secondAttribute="centerX" id="nOb-hn-OhU"/>
                             <constraint firstItem="Uux-1n-6a1" firstAttribute="top" secondItem="81E-yP-0go" secondAttribute="bottom" constant="30" id="ojj-Dd-7DI"/>
+                            <constraint firstItem="z55-W2-PJP" firstAttribute="top" secondItem="oUc-0O-6Um" secondAttribute="bottom" constant="40" id="opa-4g-5sS"/>
+                            <constraint firstItem="oUc-0O-6Um" firstAttribute="top" secondItem="LRC-4Z-I20" secondAttribute="bottom" id="sMN-Dl-sdM"/>
                             <constraint firstAttribute="trailing" secondItem="j1y-af-vXs" secondAttribute="trailing" constant="10" id="sd6-WR-ulQ"/>
                         </constraints>
                     </view>
@@ -1082,6 +1288,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="z55-W2-PJP" id="q8g-mn-Rh0"/>
+                        <outlet property="button2" destination="81E-yP-0go" id="ZZb-Jt-dqO"/>
+                        <outlet property="button3" destination="Uux-1n-6a1" id="uk2-cK-zqQ"/>
+                        <outlet property="button4" destination="y8b-8v-aUx" id="rwv-v1-hnl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhZ-mx-H8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1090,7 +1302,7 @@
         <!--Baseline-->
         <scene sceneID="HPY-zA-ddk">
             <objects>
-                <viewController title="Baseline" id="JbF-2m-LpB" sceneMemberID="viewController">
+                <viewController title="Baseline" id="JbF-2m-LpB" customClass="Question13ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gNT-eW-L8a"/>
                         <viewControllerLayoutGuide type="bottom" id="LWo-iy-WQd"/>
@@ -1115,6 +1327,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Great! Never been better."/>
                                 <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="JbF-2m-LpB" eventType="primaryActionTriggered" id="Xfd-mg-YIk"/>
                                     <segue destination="B6T-vp-6ja" kind="show" id="kpK-QD-g9f"/>
                                 </connections>
                             </button>
@@ -1122,6 +1335,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Doing good overall."/>
                                 <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="JbF-2m-LpB" eventType="primaryActionTriggered" id="BPe-ZY-iqg"/>
                                     <segue destination="B6T-vp-6ja" kind="show" id="SbH-kW-9WQ"/>
                                 </connections>
                             </button>
@@ -1129,14 +1343,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Could be a bit better."/>
                                 <connections>
-                                    <segue destination="Uba-xa-FRn" kind="show" id="G0V-Fm-gWU"/>
+                                    <action selector="startButtonPress1WithButton:" destination="JbF-2m-LpB" eventType="primaryActionTriggered" id="veD-Y9-WJy"/>
+                                    <segue destination="Uba-xa-FRn" kind="show" identifier="Question14Segue" id="G0V-Fm-gWU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFY-jv-2Vl">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Feeling pain."/>
                                 <connections>
-                                    <segue destination="Uba-xa-FRn" kind="show" id="jVN-CO-m59"/>
+                                    <action selector="startButtonPress1WithButton:" destination="JbF-2m-LpB" eventType="primaryActionTriggered" id="XqJ-Ol-1Vk"/>
+                                    <segue destination="Uba-xa-FRn" kind="show" identifier="AnotherQuestion14Segue" id="jVN-CO-m59"/>
                                 </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Notes:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMG-lH-t8A">
@@ -1176,6 +1392,12 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="YJh-Hd-CuF"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="QEj-QS-PE8"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="d9z-2w-7fx" id="9UI-dR-9Ce"/>
+                        <outlet property="button2" destination="lm2-gZ-FEJ" id="lkc-eF-GP6"/>
+                        <outlet property="button3" destination="AMK-Lx-8Ee" id="leZ-7l-DoW"/>
+                        <outlet property="button4" destination="RFY-jv-2Vl" id="HSJ-bt-grU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydR-fk-4BY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1184,7 +1406,7 @@
         <!--Baseline-->
         <scene sceneID="J6b-pS-4ie">
             <objects>
-                <viewController title="Baseline" id="Uba-xa-FRn" sceneMemberID="viewController">
+                <viewController title="Baseline" id="Uba-xa-FRn" customClass="Question14ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3AB-IW-cmL"/>
                         <viewControllerLayoutGuide type="bottom" id="b5D-qY-ofd"/>
@@ -1208,18 +1430,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gl-Gs-che">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Chest/Back"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="Uba-xa-FRn" eventType="primaryActionTriggered" id="hqx-eE-rkY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBs-ht-K9o">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Legs"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="Uba-xa-FRn" eventType="primaryActionTriggered" id="G7i-9o-aQ2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr1-SC-2k8">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Arms"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="Uba-xa-FRn" eventType="primaryActionTriggered" id="lbL-d5-haR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIp-3f-fsU">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Head"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="Uba-xa-FRn" eventType="primaryActionTriggered" id="poF-A5-KeI"/>
+                                </connections>
                             </button>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Specifics:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b2S-rg-Lqn">
                                 <nil key="textColor"/>
@@ -1256,7 +1490,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Question 14" id="Rv1-71-Xov">
                         <barButtonItem key="backBarButtonItem" title="Back" id="H8V-H5-4Mw"/>
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="LGm-25-aXg"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="LGm-25-aXg">
+                            <connections>
+                                <segue destination="er0-pi-FMY" kind="show" id="rU3-D7-hWd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s82-KZ-bXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1266,7 +1504,7 @@
         <!--Baseline-->
         <scene sceneID="bCP-DG-7mV">
             <objects>
-                <viewController title="Baseline" id="B6T-vp-6ja" sceneMemberID="viewController">
+                <viewController title="Baseline" id="B6T-vp-6ja" customClass="DataViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nFh-nY-y1y"/>
                         <viewControllerLayoutGuide type="bottom" id="efi-g4-TL2"/>
@@ -1275,70 +1513,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc0-Mb-hQj">
-                                <attributedString key="attributedText">
-                                    <fragment content="Thanks! Here's your data.">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks! Here's your data:" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc0-Mb-hQj">
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1g-MN-Ary">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="5+"/>
+                                <state key="normal" title="Showing Symptoms of Major Depression"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4C-Qf-bCX">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="3-4"/>
+                                <state key="normal" title="Showing Symptoms of Moderate Depression"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-2b-cAP">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="1-2"/>
+                                <state key="normal" title="Showing Symptoms of Minor Depression"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zid-da-I1o">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="0-1"/>
+                                <state key="normal" title="Minimal Symptoms of Depression"/>
                             </button>
-                            <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Notes:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJr-PU-jUQ">
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F13-Ov-TyL">
                                 <frame key="frameInset" minY="20" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Question 5" id="oGR-qA-MOs">
+                                    <navigationItem title="Results" id="oGR-qA-MOs">
                                         <barButtonItem key="backBarButtonItem" title="Back" id="QT2-Jx-Qlw"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Next" id="FWC-kd-GVH"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKy-lX-6IX">
+                                <state key="normal" title="No Symptoms of Depression"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAMHSA Treatment Referral Helpline –" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmY-Lj-ZdF">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call 1‑877‑726‑4727 for info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glv-Vs-WLi">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in your area" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgI-30-gWJ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9197288482" green="1" blue="0.92939517810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fgI-30-gWJ" firstAttribute="top" secondItem="glv-Vs-WLi" secondAttribute="bottom" constant="3" id="0i7-ra-PDR"/>
                             <constraint firstItem="f1g-MN-Ary" firstAttribute="centerX" secondItem="4GA-EJ-ooL" secondAttribute="centerX" id="1oy-nC-TDp"/>
-                            <constraint firstAttribute="trailing" secondItem="KJr-PU-jUQ" secondAttribute="trailing" constant="10" id="5AF-IU-qgz"/>
+                            <constraint firstAttribute="trailing" secondItem="glv-Vs-WLi" secondAttribute="trailing" id="AMr-bY-bua"/>
                             <constraint firstItem="f1g-MN-Ary" firstAttribute="top" secondItem="rc0-Mb-hQj" secondAttribute="bottom" constant="40" id="AZf-Wg-zVi"/>
                             <constraint firstItem="zid-da-I1o" firstAttribute="top" secondItem="xhN-2b-cAP" secondAttribute="bottom" constant="30" id="EvP-PE-fpF"/>
-                            <constraint firstItem="KJr-PU-jUQ" firstAttribute="leading" secondItem="4GA-EJ-ooL" secondAttribute="leading" constant="10" id="KyS-Lu-SQ4"/>
+                            <constraint firstItem="xKy-lX-6IX" firstAttribute="centerX" secondItem="4GA-EJ-ooL" secondAttribute="centerX" id="JpA-3n-Kx7"/>
                             <constraint firstItem="rc0-Mb-hQj" firstAttribute="top" secondItem="nFh-nY-y1y" secondAttribute="bottom" constant="100" id="Mty-jH-vao"/>
                             <constraint firstItem="xhN-2b-cAP" firstAttribute="top" secondItem="t4C-Qf-bCX" secondAttribute="bottom" constant="30" id="Oqf-2X-tfZ"/>
+                            <constraint firstItem="EmY-Lj-ZdF" firstAttribute="top" secondItem="xKy-lX-6IX" secondAttribute="bottom" constant="30" id="P1i-nW-oT7"/>
                             <constraint firstItem="zid-da-I1o" firstAttribute="centerX" secondItem="4GA-EJ-ooL" secondAttribute="centerX" id="To2-I5-ilR"/>
+                            <constraint firstItem="glv-Vs-WLi" firstAttribute="leading" secondItem="4GA-EJ-ooL" secondAttribute="leading" id="UrY-aD-sO2"/>
                             <constraint firstItem="t4C-Qf-bCX" firstAttribute="top" secondItem="f1g-MN-Ary" secondAttribute="bottom" constant="30" id="cyI-gx-dfT"/>
                             <constraint firstItem="t4C-Qf-bCX" firstAttribute="centerX" secondItem="4GA-EJ-ooL" secondAttribute="centerX" id="dUb-YH-ROo"/>
+                            <constraint firstItem="xKy-lX-6IX" firstAttribute="top" secondItem="zid-da-I1o" secondAttribute="bottom" constant="30" id="eAF-SK-lEo"/>
                             <constraint firstItem="xhN-2b-cAP" firstAttribute="centerX" secondItem="4GA-EJ-ooL" secondAttribute="centerX" id="iMq-lL-ct6"/>
-                            <constraint firstItem="KJr-PU-jUQ" firstAttribute="top" secondItem="zid-da-I1o" secondAttribute="bottom" constant="40" id="u5l-nl-JVr"/>
+                            <constraint firstItem="EmY-Lj-ZdF" firstAttribute="leading" secondItem="4GA-EJ-ooL" secondAttribute="leading" id="iaS-XW-F7K"/>
+                            <constraint firstAttribute="trailing" secondItem="EmY-Lj-ZdF" secondAttribute="trailing" id="ugq-kd-AU2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fgI-30-gWJ" secondAttribute="trailing" id="vUe-KF-lBk"/>
+                            <constraint firstItem="fgI-30-gWJ" firstAttribute="leading" secondItem="4GA-EJ-ooL" secondAttribute="leadingMargin" id="wHX-fk-UVf"/>
+                            <constraint firstItem="glv-Vs-WLi" firstAttribute="top" secondItem="EmY-Lj-ZdF" secondAttribute="bottom" constant="3" id="wOq-EU-bQb"/>
                             <constraint firstItem="rc0-Mb-hQj" firstAttribute="centerX" secondItem="4GA-EJ-ooL" secondAttribute="centerX" id="z1j-gf-WV6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Data" id="vw5-2O-9PI">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Rfz-Hu-tsL"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="f1g-MN-Ary" id="Yqo-PA-2Uc"/>
+                        <outlet property="button2" destination="t4C-Qf-bCX" id="gYQ-zy-Bbq"/>
+                        <outlet property="button3" destination="xhN-2b-cAP" id="9O4-ks-HEB"/>
+                        <outlet property="button4" destination="zid-da-I1o" id="ktg-Oc-bMU"/>
+                        <outlet property="button5" destination="xKy-lX-6IX" id="d1v-FH-7DU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ss-M0-mqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1347,7 +1605,7 @@
         <!--Baseline-->
         <scene sceneID="Fxc-si-Qal">
             <objects>
-                <viewController title="Baseline" id="er0-pi-FMY" customClass="BaselineViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Baseline" id="er0-pi-FMY" customClass="Question15ViewController" customModule="Hackathon2016" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MC1-Rn-nQF"/>
                         <viewControllerLayoutGuide type="bottom" id="Nih-81-Ogh"/>
@@ -1361,31 +1619,35 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euy-U9-gw5">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="3-4"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bY2-vo-uZk">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="10+"/>
+                                <state key="normal" title="Worse Pain Ever"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="er0-pi-FMY" eventType="primaryActionTriggered" id="YQP-G8-hyh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cz-EL-KzC">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="9-10"/>
+                                <state key="normal" title="Really Bad"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="er0-pi-FMY" eventType="primaryActionTriggered" id="pn7-3O-Qj8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsX-8w-KNm">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="7-8"/>
+                                <state key="normal" title="Hurts But Manageable"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="er0-pi-FMY" eventType="primaryActionTriggered" id="hAn-T0-i6f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkc-we-D4c">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="5-6"/>
+                                <state key="normal" title="Not Too Bad"/>
+                                <connections>
+                                    <action selector="startButtonPress1WithButton:" destination="er0-pi-FMY" eventType="primaryActionTriggered" id="Wg0-4Q-ddM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fik-cb-J2K">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="1-2"/>
-                            </button>
-                            <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Notes:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mce-gq-2cf">
+                            <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Comments:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mce-gq-2cf">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -1396,19 +1658,15 @@
                             <constraint firstItem="ZHr-Lb-dVR" firstAttribute="centerX" secondItem="9uN-dA-PPv" secondAttribute="centerX" id="5kp-SV-BsI"/>
                             <constraint firstAttribute="trailing" secondItem="mce-gq-2cf" secondAttribute="trailing" constant="10" id="7W7-4k-27W"/>
                             <constraint firstItem="3Cz-EL-KzC" firstAttribute="centerX" secondItem="9uN-dA-PPv" secondAttribute="centerX" id="8dZ-nW-RGd"/>
-                            <constraint firstItem="fik-cb-J2K" firstAttribute="top" secondItem="Euy-U9-gw5" secondAttribute="bottom" constant="30" id="BK1-V3-tMB"/>
                             <constraint firstItem="mce-gq-2cf" firstAttribute="leading" secondItem="9uN-dA-PPv" secondAttribute="leading" constant="10" id="Hzo-GX-Zye"/>
-                            <constraint firstItem="ZHr-Lb-dVR" firstAttribute="top" secondItem="MC1-Rn-nQF" secondAttribute="bottom" constant="60" id="MNb-IQ-iNN"/>
-                            <constraint firstItem="mce-gq-2cf" firstAttribute="top" secondItem="fik-cb-J2K" secondAttribute="bottom" constant="40" id="W3D-P3-Tc3"/>
+                            <constraint firstItem="ZHr-Lb-dVR" firstAttribute="top" secondItem="MC1-Rn-nQF" secondAttribute="bottom" constant="90" id="MNb-IQ-iNN"/>
+                            <constraint firstItem="mce-gq-2cf" firstAttribute="top" secondItem="Kkc-we-D4c" secondAttribute="bottom" constant="40" id="Pxy-5m-oNT"/>
                             <constraint firstItem="Kkc-we-D4c" firstAttribute="top" secondItem="DsX-8w-KNm" secondAttribute="bottom" constant="30" id="Wht-yW-lrF"/>
                             <constraint firstItem="Kkc-we-D4c" firstAttribute="centerX" secondItem="9uN-dA-PPv" secondAttribute="centerX" id="Xnn-kF-VHQ"/>
-                            <constraint firstItem="Euy-U9-gw5" firstAttribute="centerX" secondItem="9uN-dA-PPv" secondAttribute="centerX" id="Ywb-9A-niK"/>
                             <constraint firstItem="bY2-vo-uZk" firstAttribute="top" secondItem="ZHr-Lb-dVR" secondAttribute="bottom" constant="40" id="eJk-yu-gUZ"/>
                             <constraint firstItem="bY2-vo-uZk" firstAttribute="centerX" secondItem="9uN-dA-PPv" secondAttribute="centerX" id="fzf-ac-UWb"/>
-                            <constraint firstItem="Euy-U9-gw5" firstAttribute="top" secondItem="Kkc-we-D4c" secondAttribute="bottom" constant="30" id="gQk-Ww-e9t"/>
                             <constraint firstItem="3Cz-EL-KzC" firstAttribute="top" secondItem="bY2-vo-uZk" secondAttribute="bottom" constant="30" id="lcR-JS-AMH"/>
                             <constraint firstItem="DsX-8w-KNm" firstAttribute="centerX" secondItem="9uN-dA-PPv" secondAttribute="centerX" id="lkC-F0-jVK"/>
-                            <constraint firstItem="fik-cb-J2K" firstAttribute="centerX" secondItem="9uN-dA-PPv" secondAttribute="centerX" id="nZE-g4-x0c"/>
                             <constraint firstItem="DsX-8w-KNm" firstAttribute="top" secondItem="3Cz-EL-KzC" secondAttribute="bottom" constant="30" id="qcY-cc-9AT"/>
                         </constraints>
                     </view>
@@ -1427,7 +1685,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SbH-kW-9WQ"/>
         <segue reference="jVN-CO-m59"/>
+        <segue reference="L9J-MV-nkH"/>
     </inferredMetricsTieBreakers>
 </document>
